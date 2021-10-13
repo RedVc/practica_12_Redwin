@@ -1,0 +1,37 @@
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+/* VARIABLES */
+
+:root {
+    --H1: white;
+    --H2: white;
+}
+
+
+
+/* DOCUMENTO */
+
+.header {
+    background-color: lightgreen;
+}
+
+.main {
+    background-color: lightblue;
+}
+
+.aside {
+    background-color: lightcoral;
+}
+
+.footer {
+    background-color: lightyellow;
+}
