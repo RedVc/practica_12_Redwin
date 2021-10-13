@@ -1,0 +1,31 @@
+
+.contenedor {
+
+    min-width: 1500px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header    header  header"
+                         "main      main    main"
+                         "aside     aside   aside"
+                         "footer    footer  footer";
+}
+
+.aside {
+    /* background-color: lightcoral; */
+
+    grid-area: aside;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    justify-content:center;
+    align-content: start;
+}
+
+.aside > div {
+    display: block;
+}

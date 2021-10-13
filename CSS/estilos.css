@@ -12,26 +12,79 @@ body {
 /* VARIABLES */
 
 :root {
-    --H1: white;
-    --H2: white;
+    --principal: white;
+    --secundario: white;
 }
 
 
 
 /* DOCUMENTO */
+.header, .main, .aside, .footer {
+    margin-top: 50px;
 
+}
+
+
+
+
+/* HEADER */
 .header {
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
+    grid-area: header;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
 }
 
+.titulo {
+    border: solid rebeccapurple 2px;
+    color: var(--principal);
+
+    width: fit-content;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 2em;
+}
+
+/* MAIN */
 .main {
-    background-color: lightblue;
+    /* background-color: lightblue; */
+    
+    grid-area: main;
 }
 
-.aside {
-    background-color: lightcoral;
+.parrafo {
+    color: var(--secundario);
+
+    font-size: 1.5em;
+    padding: 10px;
 }
 
+.boton {
+    padding: 5px;
+    margin: 5px;
+    font-size: 1em;
+
+    border-color: white;
+    color: var(--secundario);
+    background-color: black;
+}
+
+.boton:hover {
+    background-color: darkslategray;
+}
+
+/* ASIDE */
+
+
+
+
+/* FOOTER */
 .footer {
-    background-color: lightyellow;
+    /* background-color: lightyellow; */
+    color: grey;
+    text-align: center;
+
+    grid-area: footer;
 }
