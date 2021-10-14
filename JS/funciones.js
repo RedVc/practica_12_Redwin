@@ -55,9 +55,26 @@ function ingresarNumeros() {
 
 
     
-    
+
     // ------------------------------------ Primo ------------------------------------ 
-    
+    let primo = (function () {
+
+        if (numero == 0 || numero == 1 || numero == 4)
+        
+        return "No";
+        
+        for (let x = 2; x < numero / 2; x++) {
+            
+            if (numero % x == 0)
+            
+            return "No";
+        }
+        // Si no se pudo dividir por ninguno de los de arriba, sí es primo
+        return "Si";
+
+    }());
+
+    window.mensajeP = primo;
 
 
 }
@@ -99,3 +116,22 @@ function leave2() {
 // eventListener
 document.getElementById('resultado2').addEventListener("mouseenter", over2);
 document.getElementById('resultado2').addEventListener("mouseleave", leave2);
+
+
+
+// -------------------------------- Par/Impar--------------------------------------
+// Mouse Enter 1
+function over3() {
+    document.getElementById('res3').innerHTML = mensajeP;
+}
+
+// Mouse Leave
+function leave3() {
+    document.getElementById('res3').innerHTML = "El número es primo (si/no):";
+}
+
+
+
+// eventListener
+document.getElementById('resultado3').addEventListener("mouseenter", over3);
+document.getElementById('resultado3').addEventListener("mouseleave", leave3);
