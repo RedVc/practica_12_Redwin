@@ -9,7 +9,7 @@ function ingresarNumeros() {
        numero = prompt("Número entre 1 y 100");
     } while (numero > 100 || numero < 1 || isNaN(numero));
 
-
+    document.getElementById('numero').innerHTML = numero;
 
 
     // ------------------------------------ Factorial ------------------------------------

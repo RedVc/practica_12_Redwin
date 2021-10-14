@@ -37,7 +37,7 @@
     width: 250px;
     height: 50px;
 
-    border: solid var(--secundario) 3px;
+    border: solid lightblue 3px;
     padding: 50px 20px;
     text-align: center;
     margin: auto;

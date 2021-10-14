@@ -12,13 +12,6 @@ body {
 
 /* VARIABLES */
 
-:root {
-    --principal: white;
-    --secundario: white;
-}
-
-
-
 /* DOCUMENTO */
 .header, .main, .aside, .footer {
     margin-top: 50px;
@@ -41,7 +34,7 @@ body {
 
 .titulo {
     border: solid rebeccapurple 2px;
-    color: var(--principal);
+    color: white;
 
     width: fit-content;
     text-align: center;
@@ -57,10 +50,16 @@ body {
 }
 
 .parrafo {
-    color: var(--secundario);
+    color: white;
 
     font-size: 1.5em;
     padding: 10px;
+    text-align: center;
+}
+
+.numero {
+    font-size: 3em;
+    color: red;
     text-align: center;
 }
 
@@ -68,15 +67,21 @@ body {
     padding: 5px;
     margin: 10px;
     font-size: 1.2em;
+    border-radius: 10px;
 
     border-color: royalblue;
-    color: var(--secundario);
+    color: lightblue;
     background-color: black;
 }
 
 .boton:hover {
     background-color: darkslategray;
-    color: black;
+    color: white;
+}
+
+.nHover {
+    background-color: red;
+    zoom: 110%;
 }
 
 /* ASIDE */
