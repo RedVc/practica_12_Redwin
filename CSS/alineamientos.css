@@ -22,7 +22,7 @@
     grid-area: aside;
 
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     max-width: 1500px;
@@ -33,7 +33,9 @@
 
 .aside > div {
     display: block;
-    width: fit-content;
+
+    width: 250px;
+    height: 50px;
 
     border: solid var(--secundario) 3px;
     padding: 50px 20px;
