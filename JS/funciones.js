@@ -11,6 +11,7 @@ function ingresarNumeros() {
 
 
 
+
     // ------------------------------------ Factorial ------------------------------------
     let factorial = function (n) {
 
@@ -22,22 +23,17 @@ function ingresarNumeros() {
             
         }
 
+        
+
         return total;
     };
 
     // llama la variable que contiene la función
     window.resultado1 = factorial(numero);
 
-    // alert(resultado1); // Prueba
-
-
-    // Construida1
-    
     
 
-    
 
-    
 
     // ------------------------------------ par|impar ------------------------------------
     let parImpar = new Function("a", "return a = a % 2 == 0 ? 1 : 0" )
@@ -57,10 +53,9 @@ function ingresarNumeros() {
     
     }
 
-    // alert(mensaje); // Prueba
 
-
-
+    
+    
     // ------------------------------------ Primo ------------------------------------ 
     
 
@@ -70,12 +65,13 @@ function ingresarNumeros() {
 
 
 
-// ----------------------------------------------------------------------
+// ------------------------------ Factorial ----------------------------------------
 // Mouse Enter 1
 function over1() {
     document.getElementById('res1').innerHTML = resultado1;
 }
 
+// Mouse Leave
 function leave1() {
     document.getElementById('res1').innerHTML = "Factorial del número:";
 }
@@ -87,11 +83,19 @@ document.getElementById('resultado1').addEventListener("mouseleave", leave1);
 
 
 
-// ----------------------------------------------------------------------
-// Mouse Over 2
-function prueba2() {
-    alert(mensaje)
+// -------------------------------- Par/Impar--------------------------------------
+// Mouse Enter 1
+function over2() {
+    document.getElementById('res2').innerHTML = mensaje;
 }
 
+// Mouse Leave
+function leave2() {
+    document.getElementById('res2').innerHTML = "El número es (par/impar):";
+}
+
+
+
 // eventListener
-document.getElementById('resultado2').addEventListener("mouseover", prueba2);
+document.getElementById('resultado2').addEventListener("mouseenter", over2);
+document.getElementById('resultado2').addEventListener("mouseleave", leave2);
