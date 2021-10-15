@@ -83,14 +83,16 @@ function ingresarNumeros() {
 
 
 // ------------------------------ Factorial ----------------------------------------
-// Mouse Enter 1
+// Mouse Enter
 function over1() {
     document.getElementById('res1').innerHTML = resultado1;
+    document.getElementById('resultado1').setAttribute("style", "background-color:darkslategray;");
 }
 
 // Mouse Leave
 function leave1() {
     document.getElementById('res1').innerHTML = "Factorial del número:";
+    document.getElementById('resultado1').style.background = 'none';
 }
 
 // eventListener
@@ -99,16 +101,17 @@ document.getElementById('resultado1').addEventListener("mouseleave", leave1);
 
 
 
-
 // -------------------------------- Par/Impar--------------------------------------
-// Mouse Enter 1
+// Mouse Enter
 function over2() {
     document.getElementById('res2').innerHTML = mensaje;
+    document.getElementById('resultado2').setAttribute("style", "background-color:darkslategray;");
 }
 
 // Mouse Leave
 function leave2() {
     document.getElementById('res2').innerHTML = "El número es (par/impar):";
+    document.getElementById('resultado2').style.background = 'none';
 }
 
 
@@ -120,14 +123,16 @@ document.getElementById('resultado2').addEventListener("mouseleave", leave2);
 
 
 // -------------------------------- Par/Impar--------------------------------------
-// Mouse Enter 1
+// Mouse Enter
 function over3() {
     document.getElementById('res3').innerHTML = mensajeP;
+    document.getElementById('resultado3').setAttribute("style", "background-color:darkslategray;");
 }
 
 // Mouse Leave
 function leave3() {
     document.getElementById('res3').innerHTML = "El número es primo (si/no):";
+    document.getElementById('resultado3').style.background = 'none';
 }
 
 
